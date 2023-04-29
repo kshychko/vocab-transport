@@ -1,0 +1,18 @@
+name: jargon_onRelease
+
+on:
+  repository_dispatch:
+    types: [ 'jargon_onRelease' ]
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: 'echo "field: ${{ github.event.client_payload.artefacts.jsonldVocab.url }}"'
+      - run: 'echo "field: ${{ github.event.client_payload.artefacts.jsonldVocab.fileName }}"'
+      - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
+
+
+
