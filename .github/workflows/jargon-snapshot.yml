@@ -1,0 +1,33 @@
+name: jargon_onRelease
+
+on:
+  repository_dispatch:
+    types: [ 'jargon_onSnapshot' ]
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - run: 'echo "field: ${{ github.event.client_payload.artefacts.jsonldVocab.url }}"'
+      - run: 'echo "field: ${{ github.event.client_payload.artefacts.jsonldVocab.fileName }}"'
+      - run: 'wget ${{ github.event.client_payload.artefacts.jsonldVocab.fileName }} ${{ github.event.client_payload.artefacts.jsonldVocab.url }}'
+      - run: 'mv ${{ github.event.client_payload.artefacts.jsonldVocab.fileName }} vocab/'
+
+
+      - name: snapshot PR
+        uses: peter-evans/create-pull-request@v5
+        with:
+          commit-message: "chore: snapshot"
+          delete-branch: true
+          title: 'chore: update vocabulary from jargon snapshot'
+          body: |
+            Updates JSON-LD vocabulary published as an artefact as a part of jargon snapshot event
+          labels: 'chore'
+          base: 'main'
+          branch: create-pull-request/snapshot
+          draft: true
+
+
+

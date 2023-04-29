@@ -5,7 +5,7 @@ on:
     types: [ 'jargon_onRelease' ]
 
 jobs:
-  package:
+  release:
     runs-on: ubuntu-latest
 
     steps:
