@@ -1,4 +1,4 @@
-name: jargon_onRelease
+name: jargon_onSnapshot
 
 on:
   repository_dispatch:
