@@ -12,8 +12,8 @@ jobs:
       - uses: actions/checkout@v3
       - run: 'echo "field: ${{ github.event.client_payload.artefacts.jsonldVocab.url }}"'
       - run: 'echo "field: ${{ github.event.client_payload.artefacts.jsonldVocab.fileName }}"'
-      - run: 'wget -O ${{ github.event.client_payload.artefacts.jsonldVocab.fileName }} ${{ github.event.client_payload.artefacts.jsonldVocab.url }}'
-      - run: 'mv ${{ github.event.client_payload.artefacts.jsonldVocab.fileName }} vocab/'
+      - run: 'wget -O transport.jsonld ${{ github.event.client_payload.artefacts.jsonldVocab.url }}'
+      - run: 'mv transport.jsonld vocab/'
 
 
       - name: snapshot PR
@@ -24,7 +24,6 @@ jobs:
           title: 'chore: update vocabulary from jargon snapshot'
           body: |
             Updates JSON-LD vocabulary published as an artefact as a part of jargon snapshot event
-          labels: 'chore'
           base: 'main'
           branch: create-pull-request/snapshot
           draft: true
