@@ -4,7 +4,8 @@
         "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "owl": "http://www.w3.org/2002/07/owl#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-        "unece": "https://vocabulary.uncefact.org/"
+        "unece": "https://vocabulary.uncefact.org/",
+        "schema": "https://schema.org/"
     },
     "@graph": [
         {
@@ -12,6 +13,15 @@
             "@type": "rdfs:Class",
             "@id": "unece:AdjustmentReasonCodeList",
             "rdfs:comment": ""
+        },
+        {
+            "@id": "unece:Allergy",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Allergy",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/Allergy"
+            },
+            "rdfs:comment": "A guest condition of the abnormal reaction of the body to a previously encountered substance introduced by inhalation, ingestion, injection, or skin contact."
         },
         {
             "rdfs:label": "AutomaticDataCaptureMethodCodeList",
@@ -318,6 +328,15 @@
             "@type": "unece:CargoOperationalCategoryCodeList",
             "rdf:value": "9",
             "rdfs:comment": "Containerized"
+        },
+        {
+            "@id": "unece:CarriedEquipment",
+            "@type": "rdfs:Class",
+            "rdfs:label": "CarriedEquipment",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/CarriedEquipment"
+            },
+            "rdfs:comment": "A tool or device carried by a guest for an activity."
         },
         {
             "rdfs:label": "ChargePayingPartyRoleCodeList",
@@ -833,6 +852,15 @@
             "rdfs:comment": "Delivery arranged by logistic service provider"
         },
         {
+            "@id": "unece:Disability",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Disability",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/Disability"
+            },
+            "rdfs:comment": "A physical or mental condition that limits a guest's movements, senses, or activities."
+        },
+        {
             "@id": "unece:Emission",
             "@type": "rdfs:Class",
             "rdfs:label": "Emission",
@@ -849,6 +877,60 @@
                 "@id": "https://vocabulary.uncefact.org/Equipment"
             },
             "rdfs:comment": "Hardware or software typically marketed by a company other than the original manufacturer."
+        },
+        {
+            "@id": "unece:ExperienceEvent",
+            "@type": "rdfs:Class",
+            "rdfs:label": "ExperienceEvent",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/ExperienceEvent"
+            },
+            "rdfs:comment": "An involvement in an experience program in which some thing happens, such as a nature watching, woodware manufacturing, meditation, holiday trip, dinner, theme park visit, could be experienced."
+        },
+        {
+            "@id": "unece:ExperienceFacility",
+            "@type": "rdfs:Class",
+            "rdfs:label": "ExperienceFacility",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/ExperienceFacility"
+            },
+            "rdfs:comment": "A structure or place, such as a restaurant, hotel, theme park, hot spring bathing pool, parking lot, or meeting room, that provides a particular experience."
+        },
+        {
+            "@id": "unece:ExperienceItem",
+            "@type": "rdfs:Class",
+            "rdfs:label": "ExperienceItem",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/ExperienceItem"
+            },
+            "rdfs:comment": "A collection of information specific to the involvement of a person or persons in a happening, such as a theme park, a guided tour being used or reported on for trade purposes."
+        },
+        {
+            "@id": "unece:ExperienceProduct",
+            "@type": "rdfs:Class",
+            "rdfs:label": "ExperienceProduct",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/ExperienceProduct"
+            },
+            "rdfs:comment": "Any service that provides an involvement, such as an adventure experience, wellness experience, social or business activity experience."
+        },
+        {
+            "@id": "unece:ExperienceProgramAction",
+            "@type": "rdfs:Class",
+            "rdfs:label": "ExperienceProgramAction",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/ExperienceProgramAction"
+            },
+            "rdfs:comment": "Any type of action, such as searching, reserving, or paying, necessary for an experience program, such as an adventure experience, a business experience, or a wellness experience."
+        },
+        {
+            "@id": "unece:FoodChoice",
+            "@type": "rdfs:Class",
+            "rdfs:label": "FoodChoice",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/FoodChoice"
+            },
+            "rdfs:comment": "A guest's decision which food to buy or eat."
         },
         {
             "rdfs:label": "FreightChargeTariffClassCodeList",
@@ -10577,6 +10659,33 @@
             "rdfs:comment": "Mutually defined"
         },
         {
+            "@id": "unece:GuestArrival",
+            "@type": "rdfs:Class",
+            "rdfs:label": "GuestArrival",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/GuestArrival"
+            },
+            "rdfs:comment": "The act of coming to or reaching a place by a specified guest."
+        },
+        {
+            "@id": "unece:GuestHealthIndication",
+            "@type": "rdfs:Class",
+            "rdfs:label": "GuestHealthIndication",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/GuestHealthIndication"
+            },
+            "rdfs:comment": "A guest's physical or mental condition."
+        },
+        {
+            "@id": "unece:GuestPerson",
+            "@type": "rdfs:Class",
+            "rdfs:label": "GuestPerson",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/GuestPerson"
+            },
+            "rdfs:comment": "An individual guest."
+        },
+        {
             "@id": "unece:HandlingInstructions",
             "@type": "rdfs:Class",
             "rdfs:label": "HandlingInstructions",
@@ -12707,7 +12816,7 @@
             "schema:source": {
                 "@id": "https://vocabulary.uncefact.org/LogisticsTransportEquipment"
             },
-            "rdfs:comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes."
+            "rdfs:comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes.TBR: description update to excersize GitHub update"
         },
         {
             "@id": "unece:LogisticsTransportMeans",
@@ -19607,6 +19716,33 @@
             "rdfs:comment": "Mutually defined"
         },
         {
+            "@id": "unece:PersonalEffects",
+            "@type": "rdfs:Class",
+            "rdfs:label": "PersonalEffects",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/PersonalEffects"
+            },
+            "rdfs:comment": "Specified privately owned articles for personal use by an individual."
+        },
+        {
+            "@id": "unece:PetAnimal",
+            "@type": "rdfs:Class",
+            "rdfs:label": "PetAnimal",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/PetAnimal"
+            },
+            "rdfs:comment": "A domestic or tamed animal that is kept for companionship or pleasure."
+        },
+        {
+            "@id": "unece:Preference",
+            "@type": "rdfs:Class",
+            "rdfs:label": "Preference",
+            "schema:source": {
+                "@id": "https://vocabulary.uncefact.org/Preference"
+            },
+            "rdfs:comment": "An involvement in a happening, such as a theme park, a guided tour that is liked or wanted more than another item."
+        },
+        {
             "@id": "unece:RegulatedGoods",
             "@type": "rdfs:Class",
             "rdfs:label": "RegulatedGoods",
@@ -25313,6 +25449,21 @@
             "rdfs:comment": "The indication of whether or not this piece of logistics transport equipment is accompanied, such as by a transport means."
         },
         {
+            "@id": "unece:accompanyingAnimal",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "accompanyingAnimal",
+            "schema:rangeIncludes": {
+                "@id": "unece:PetAnimal"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "A pet animal accompanying this guest person."
+        },
+        {
             "@id": "unece:actionCode",
             "@type": [
                 "rdf:Property",
@@ -25326,6 +25477,21 @@
                 "@id": "unece:SpecifiedCondition"
             },
             "rdfs:comment": "A code specifying an action for this specified condition."
+        },
+        {
+            "@id": "unece:actionType",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "actionType",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceProgramAction"
+            },
+            "rdfs:comment": "A type, expressed as text, for this corrective action."
         },
         {
             "@id": "unece:actualAmount",
@@ -25718,6 +25884,21 @@
             "rdfs:comment": "The allowance or charge, expressed as text, for this logistics service charge."
         },
         {
+            "@id": "unece:allowedIndicator",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "allowedIndicator",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:PetAnimal"
+            },
+            "rdfs:comment": "The indication of whether or not this pet animal is allowed."
+        },
+        {
             "@id": "unece:anchorageDescription",
             "@type": [
                 "rdf:Property",
@@ -25909,6 +26090,21 @@
             "rdfs:comment": "Instructions applicable to this logistics packaging."
         },
         {
+            "@id": "unece:applicablePeriod",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "applicablePeriod",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecifiedPeriod"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "A period applicable to this cross-border regulatory procedure."
+        },
+        {
             "@id": "unece:applicableProductCertificate",
             "@type": [
                 "rdf:Property",
@@ -25927,6 +26123,26 @@
                 }
             ],
             "rdfs:comment": "A product certificate applicable to this production waste material component."
+        },
+        {
+            "@id": "unece:applicableQuantityUnitTypeCode",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "applicableQuantityUnitTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceItem"
+                },
+                {
+                    "@id": "unece:ExperienceProduct"
+                }
+            ],
+            "rdfs:comment": "The code specifying the type of quantity unit applicable for this experience product."
         },
         {
             "@id": "unece:applicableRegulatoryProcedure",
@@ -26009,6 +26225,29 @@
                 "@id": "unece:TransportMovement"
             },
             "rdfs:comment": "A specified inspection applicable to this logistics transport movement."
+        },
+        {
+            "@id": "unece:applicableSpecifiedNote",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "applicableSpecifiedNote",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecifiedNote"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:GuestPerson"
+                },
+                {
+                    "@id": "unece:ExperienceProduct"
+                },
+                {
+                    "@id": "unece:ExperienceEvent"
+                }
+            ],
+            "rdfs:comment": "A note applicable for this experience product."
         },
         {
             "@id": "unece:applicableSustainabilityCharacteristic",
@@ -26200,6 +26439,21 @@
                 "@id": "unece:LogisticsTransportMeans"
             },
             "rdfs:comment": "The indication of whether or not there is an approved security plan onboard this logistics transport means."
+        },
+        {
+            "@id": "unece:architecturalStyle",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "architecturalStyle",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceFacility"
+            },
+            "rdfs:comment": "An architectural style, expressed as text, of this experience facility."
         },
         {
             "@id": "unece:arrivalEvent",
@@ -26555,6 +26809,51 @@
             "rdfs:comment": "The date, time, date time or other date time value when this supply chain consignment is due to be available."
         },
         {
+            "@id": "unece:availablePeriod",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "availablePeriod",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecifiedPeriod"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "An available period for this specified experience item."
+        },
+        {
+            "@id": "unece:availableProduct",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "availableProduct",
+            "schema:rangeIncludes": {
+                "@id": "unece:ExperienceProduct"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "An available product for this specified experience item."
+        },
+        {
+            "@id": "unece:availableUnitQuantity",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "availableUnitQuantity",
+            "schema:rangeIncludes": {
+                "@id": "unece:QuantityType"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "The number of units available for this specified experience item."
+        },
+        {
             "@id": "unece:barcodeLabel",
             "@type": [
                 "rdf:Property",
@@ -26568,6 +26867,21 @@
                 "@id": "unece:ShippingMarks"
             },
             "rdfs:comment": "A barcode label that is a part of these logistics shipping marks."
+        },
+        {
+            "@id": "unece:basicObjective",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "basicObjective",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceEvent"
+            },
+            "rdfs:comment": "A basic objective, expressed as text, for this experience event."
         },
         {
             "@id": "unece:birthCountryId",
@@ -26695,6 +27009,41 @@
             "rdfs:comment": "A border crossing logistics transport movement for this supply chain consignment."
         },
         {
+            "@id": "unece:brandName",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "brandName",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceItem"
+                },
+                {
+                    "@id": "unece:ExperienceProduct"
+                }
+            ],
+            "rdfs:comment": "A brand name, expressed as text, for this experience product."
+        },
+        {
+            "@id": "unece:breakUpDateTime",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "breakUpDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceEvent"
+            },
+            "rdfs:comment": "The break up date, time, date time, or other date time value for this experience event."
+        },
+        {
             "@id": "unece:cODAmount",
             "@type": [
                 "rdf:Property",
@@ -26708,6 +27057,29 @@
                 "@id": "unece:Consignment"
             },
             "rdfs:comment": "The monetary value of the COD (Cash On Delivery) amount to be collected by the carrier upon delivery of this supply chain consignment."
+        },
+        {
+            "@id": "unece:calculatedPrice",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "calculatedPrice",
+            "schema:rangeIncludes": {
+                "@id": "unece:TradePrice"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceItem"
+                },
+                {
+                    "@id": "unece:ExperienceProduct"
+                },
+                {
+                    "@id": "unece:ExperienceEvent"
+                }
+            ],
+            "rdfs:comment": "A calculated price for this experience event."
         },
         {
             "@id": "unece:calculationBasis",
@@ -26768,6 +27140,21 @@
                 "@id": "unece:TransportMovement"
             },
             "rdfs:comment": "A code specifying a call purpose for this logistics transport movement."
+        },
+        {
+            "@id": "unece:capabilityLevel",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "capabilityLevel",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "A capability level, expressed as text, for this specified experience item."
         },
         {
             "@id": "unece:capacityMeasure",
@@ -26910,6 +27297,21 @@
             "rdfs:comment": "Cargo tolerance information, expressed as text, for this supply chain consignment item."
         },
         {
+            "@id": "unece:carriedCertificate",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "carriedCertificate",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecifiedCertificate"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "A certificate carried by this guest person."
+        },
+        {
             "@id": "unece:carriedGoodsCharacteristic",
             "@type": [
                 "rdf:Property",
@@ -27035,6 +27437,36 @@
             "rdfs:comment": "The unique identifier assigned by the carrier to this referenced supply chain consignment, such as a booking reference number when cargo space is reserved prior to loading."
         },
         {
+            "@id": "unece:carrierId",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "carrierId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestArrival"
+            },
+            "rdfs:comment": "The identifier of the carrier for this specified guest arrival."
+        },
+        {
+            "@id": "unece:carrierName",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "carrierName",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestArrival"
+            },
+            "rdfs:comment": "A carrier's name, expressed as text, related to this specified guest arrival."
+        },
+        {
             "@id": "unece:carrierParty",
             "@type": [
                 "rdf:Property",
@@ -27133,6 +27565,21 @@
             "rdfs:comment": "A certified level of pollution calculated for an emission from this logistics transport means."
         },
         {
+            "@id": "unece:certifiedPersonArrangementIndicator",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "certifiedPersonArrangementIndicator",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceProduct"
+            },
+            "rdfs:comment": "The indication of whether or not a certified person arrangement is made for this experience product."
+        },
+        {
             "@id": "unece:certifyingParty",
             "@type": [
                 "rdf:Property",
@@ -27221,6 +27668,21 @@
                 "@id": "unece:Consignment"
             },
             "rdfs:comment": "The number of separately chargeable transportation stages to be covered by this supply chain consignment."
+        },
+        {
+            "@id": "unece:choiceAllowedIndicator",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "choiceAllowedIndicator",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceEvent"
+            },
+            "rdfs:comment": "The indication of whether or not a choice is allowed for this experience event."
         },
         {
             "@id": "unece:claimedLanguageProficiency",
@@ -27381,6 +27843,21 @@
                 "@id": "unece:TransportationWasteMaterial"
             },
             "rdfs:comment": "The indication of whether or not a transportation waste material delivery is complete."
+        },
+        {
+            "@id": "unece:completionDateTime",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "completionDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceFacility"
+            },
+            "rdfs:comment": "The date of the completion of this experience facility."
         },
         {
             "@id": "unece:complianceDeclarationInformation",
@@ -28313,6 +28790,21 @@
             "rdfs:comment": "The code specifying a regulation applicable to these transported dangerous goods."
         },
         {
+            "@id": "unece:dateSequenceNumeric",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "dateSequenceNumeric",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceEvent"
+            },
+            "rdfs:comment": "The date sequence number for this experience event."
+        },
+        {
             "@id": "unece:declaredForCustomsLocation",
             "@type": [
                 "rdf:Property",
@@ -28938,6 +29430,21 @@
             "rdfs:comment": "The party from whom this referenced supply chain consignment will be or has been despatched."
         },
         {
+            "@id": "unece:destination",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "destination",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "A destination, expressed as text, for this specified experience item."
+        },
+        {
             "@id": "unece:destinationCountry",
             "@type": [
                 "rdf:Property",
@@ -29063,6 +29570,21 @@
             "rdfs:comment": "A disembarkation location for this transport person."
         },
         {
+            "@id": "unece:dislikedItem",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "dislikedItem",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:Preference"
+            },
+            "rdfs:comment": "A disliked item, expressed as text, for this experience item preference."
+        },
+        {
             "@id": "unece:disposalMethodCode",
             "@type": [
                 "rdf:Property",
@@ -29081,6 +29603,26 @@
                 }
             ],
             "rdfs:comment": "A code specifying a disposal method for this logistics packaging."
+        },
+        {
+            "@id": "unece:distinctiveFeature",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "distinctiveFeature",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecifiedFeature"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceProduct"
+                },
+                {
+                    "@id": "unece:ExperienceEvent"
+                }
+            ],
+            "rdfs:comment": "A distinctive feature of this experience product."
         },
         {
             "@id": "unece:documentaryInstructionsNotifiedParty",
@@ -29146,6 +29688,21 @@
                 "@id": "unece:SupplyChainEvent"
             },
             "rdfs:comment": "The date, time, date time, or other date time value of the due date specified by these trade payment terms."
+        },
+        {
+            "@id": "unece:durationUnitAgeMeasure",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "durationUnitAgeMeasure",
+            "schema:rangeIncludes": {
+                "@id": "unece:DurationUnitMeasureType"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "The measure of the age of this guest person."
         },
         {
             "@id": "unece:eMSId",
@@ -29413,6 +29970,21 @@
             "rdfs:comment": "An excess transport service for this logistics transport movement."
         },
         {
+            "@id": "unece:expectedDateTime",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "expectedDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:datetime"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestArrival"
+            },
+            "rdfs:comment": "The date, time, date time, or other date time value when this specified guest arrival is expected."
+        },
+        {
             "@id": "unece:expectedIndicator",
             "@type": [
                 "rdf:Property",
@@ -29576,6 +30148,21 @@
                 "@id": "unece:LogisticsLocation"
             },
             "rdfs:comment": "A facility location referenced for this logistics location."
+        },
+        {
+            "@id": "unece:facilityType",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "facilityType",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceFacility"
+            },
+            "rdfs:comment": "A type, expressed as text, of this experience facility."
         },
         {
             "@id": "unece:familyName",
@@ -29979,6 +30566,21 @@
                 "@id": "unece:Consignment"
             },
             "rdfs:comment": "A grouping centre party for this supply chain consignment."
+        },
+        {
+            "@id": "unece:guestSpecialCareIndicator",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "guestSpecialCareIndicator",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "The indication of whether or not guest special care is applicable for this specified experience item."
         },
         {
             "@id": "unece:handling",
@@ -30550,6 +31152,21 @@
             "rdfs:comment": "A consignment item included in this supply chain consignment."
         },
         {
+            "@id": "unece:includedEvent",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "includedEvent",
+            "schema:rangeIncludes": {
+                "@id": "unece:ExperienceEvent"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceProduct"
+            },
+            "rdfs:comment": "An event included within this experience product."
+        },
+        {
             "@id": "unece:includedSection",
             "@type": [
                 "rdf:Property",
@@ -30578,6 +31195,29 @@
                 "@id": "unece:TransportationWasteMaterial"
             },
             "rdfs:comment": "A material component included in this transportation waste."
+        },
+        {
+            "@id": "unece:indemnityClause",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "indemnityClause",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceItem"
+                },
+                {
+                    "@id": "unece:ExperienceProduct"
+                },
+                {
+                    "@id": "unece:ExperienceEvent"
+                }
+            ],
+            "rdfs:comment": "An indemnity clause, expressed as text, for this experience event."
         },
         {
             "@id": "unece:information",
@@ -30661,6 +31301,29 @@
                 "@id": "unece:TransportMovement"
             },
             "rdfs:comment": "An inspection party for this logistics transport movement."
+        },
+        {
+            "@id": "unece:instruction",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "instruction",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceItem"
+                },
+                {
+                    "@id": "unece:ExperienceProduct"
+                },
+                {
+                    "@id": "unece:ExperienceEvent"
+                }
+            ],
+            "rdfs:comment": "An instruction, expressed as text, for this experience event."
         },
         {
             "@id": "unece:instructionCode",
@@ -30963,6 +31626,21 @@
             "rdfs:comment": "Landline telephone communication information for this transport person."
         },
         {
+            "@id": "unece:languageId",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "languageId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "A unique identifier for a language used in this exchanged document."
+        },
+        {
             "@id": "unece:latestOccurrenceDateTime",
             "@type": [
                 "rdf:Property",
@@ -31006,6 +31684,21 @@
                 "@id": "unece:IOTDevice"
             },
             "rdfs:comment": "The date, time, date time or other date time value of the latest received signal for this monitoring IOT device, from the perspective of the receiver."
+        },
+        {
+            "@id": "unece:latestRenovationDateTime",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "latestRenovationDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceFacility"
+            },
+            "rdfs:comment": "The date of the latest renovation of this experience facility."
         },
         {
             "@id": "unece:laycanOccurrencePeriod",
@@ -31670,6 +32363,21 @@
             "rdfs:comment": "The unique lower part of the orange hazard placard identifier for these transported dangerous goods."
         },
         {
+            "@id": "unece:lowerPriceLimitAmount",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "lowerPriceLimitAmount",
+            "schema:rangeIncludes": {
+                "@id": "unece:AmountType"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "A monetary value of a lower price limit of this specified experience item."
+        },
+        {
             "@id": "unece:mFAGId",
             "@type": [
                 "rdf:Property",
@@ -31982,6 +32690,21 @@
             "rdfs:comment": "The measure of the maximum dedicated storage capacity for this transportation waste material component."
         },
         {
+            "@id": "unece:maximumGuestQuantity",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "maximumGuestQuantity",
+            "schema:rangeIncludes": {
+                "@id": "unece:QuantityType"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "The maximum number of guests for this specified experience item."
+        },
+        {
             "@id": "unece:maximumLinearDimension",
             "@type": [
                 "rdf:Property",
@@ -32077,6 +32800,21 @@
             "rdfs:comment": "The measure of the maximum storage humidity applicable to these handling instructions."
         },
         {
+            "@id": "unece:maximumUnitQuantity",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "maximumUnitQuantity",
+            "schema:rangeIncludes": {
+                "@id": "unece:QuantityType"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceProduct"
+            },
+            "rdfs:comment": "The maximum number of units of this experience product."
+        },
+        {
             "@id": "unece:maximumValueMeasure",
             "@type": [
                 "rdf:Property",
@@ -32127,6 +32865,21 @@
             "rdfs:comment": "A medical practitioner consulted indication for this MDH transportation health."
         },
         {
+            "@id": "unece:meetingDateTime",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "meetingDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:datetime"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceEvent"
+            },
+            "rdfs:comment": "The meeting date, time, date time, or other date time value for this experience event."
+        },
+        {
             "@id": "unece:methodDescription",
             "@type": [
                 "rdf:Property",
@@ -32140,6 +32893,21 @@
                 "@id": "unece:LogisticsPackaging"
             },
             "rdfs:comment": "The textual description of the method of logistics packaging, such as hermetically sealed."
+        },
+        {
+            "@id": "unece:minimumGuestQuantity",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "minimumGuestQuantity",
+            "schema:rangeIncludes": {
+                "@id": "unece:QuantityType"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "The minimum number of guests for this specified experience item."
         },
         {
             "@id": "unece:minimumLinearDimension",
@@ -32170,6 +32938,21 @@
                 "@id": "unece:HandlingInstructions"
             },
             "rdfs:comment": "The measure of the minimum storage humidity applicable to these handling instructions."
+        },
+        {
+            "@id": "unece:minimumUnitQuantity",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "minimumUnitQuantity",
+            "schema:rangeIncludes": {
+                "@id": "unece:QuantityType"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceProduct"
+            },
+            "rdfs:comment": "The minimum number of units of this experience product."
         },
         {
             "@id": "unece:minimumValueMeasure",
@@ -32490,6 +33273,81 @@
             "rdfs:comment": "The measure of the nominal gross weight (mass) of this logistics package and its contents."
         },
         {
+            "@id": "unece:notifiedAllergy",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "notifiedAllergy",
+            "schema:rangeIncludes": {
+                "@id": "unece:Allergy"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "An allergy notified for this guest person."
+        },
+        {
+            "@id": "unece:notifiedDisability",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "notifiedDisability",
+            "schema:rangeIncludes": {
+                "@id": "unece:Disability"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "A disability notified for this guest person."
+        },
+        {
+            "@id": "unece:notifiedFoodChoice",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "notifiedFoodChoice",
+            "schema:rangeIncludes": {
+                "@id": "unece:FoodChoice"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "A food choice notified for this guest person."
+        },
+        {
+            "@id": "unece:notifiedGuestArrival",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "notifiedGuestArrival",
+            "schema:rangeIncludes": {
+                "@id": "unece:GuestArrival"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "An arrival notified for this guest person."
+        },
+        {
+            "@id": "unece:notifiedHealthIndication",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "notifiedHealthIndication",
+            "schema:rangeIncludes": {
+                "@id": "unece:GuestHealthIndication"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "A health indication notified for this guest person."
+        },
+        {
             "@id": "unece:notifiedParty",
             "@type": [
                 "rdf:Property",
@@ -32511,6 +33369,51 @@
                 }
             ],
             "rdfs:comment": "A party to be notified about this logistics transport movement."
+        },
+        {
+            "@id": "unece:notifiedPreference",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "notifiedPreference",
+            "schema:rangeIncludes": {
+                "@id": "unece:Preference"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "An experience item preference notified for this guest person."
+        },
+        {
+            "@id": "unece:notifiedProtectionMeans",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "notifiedProtectionMeans",
+            "schema:rangeIncludes": {
+                "@id": "unece:ProtectionMeans"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "A disease protection means notified for this guest person."
+        },
+        {
+            "@id": "unece:objective",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "objective",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceProduct"
+            },
+            "rdfs:comment": "An objective, expressed as text, for this experience product."
         },
         {
             "@id": "unece:occurrenceDateTime",
@@ -32703,6 +33606,26 @@
             "rdfs:comment": "The party that operates this piece of logistics transport equipment."
         },
         {
+            "@id": "unece:operationalPeriod",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "operationalPeriod",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecifiedPeriod"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceProduct"
+                },
+                {
+                    "@id": "unece:ExperienceEvent"
+                }
+            ],
+            "rdfs:comment": "A operational period for this experience product."
+        },
+        {
             "@id": "unece:operationalStatusCode",
             "@type": [
                 "rdf:Property",
@@ -32751,6 +33674,21 @@
                 }
             ],
             "rdfs:comment": "A trade party who is an operator of this product handling process."
+        },
+        {
+            "@id": "unece:optionalProduct",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "optionalProduct",
+            "schema:rangeIncludes": {
+                "@id": "unece:ExperienceProduct"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceProduct"
+            },
+            "rdfs:comment": "An optional product for this experience product."
         },
         {
             "@id": "unece:originCountry",
@@ -33130,6 +34068,21 @@
             "rdfs:comment": "The number of passengers for this logistics transport movement."
         },
         {
+            "@id": "unece:passportId",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "passportId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "The identifier of the passport of this guest."
+        },
+        {
             "@id": "unece:paymentPlaceLocation",
             "@type": [
                 "rdf:Property",
@@ -33241,6 +34194,21 @@
                 }
             ],
             "rdfs:comment": "Physical logistics shipping marks and barcode information for this referenced supply chain consignment item."
+        },
+        {
+            "@id": "unece:physicalSpecifiedLocation",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "physicalSpecifiedLocation",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecifiedLocation"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceFacility"
+            },
+            "rdfs:comment": "A physical location specified for this experience facility."
         },
         {
             "@id": "unece:pickUpEvent",
@@ -33606,6 +34574,21 @@
             "rdfs:comment": "A calibrated measurement of precision for this monitoring sensor."
         },
         {
+            "@id": "unece:preferredItem",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "preferredItem",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:Preference"
+            },
+            "rdfs:comment": "A preferred item, expressed as text, for this experience item preference."
+        },
+        {
             "@id": "unece:preplannedIndicator",
             "@type": [
                 "rdf:Property",
@@ -33676,6 +34659,21 @@
             "rdfs:comment": "A previous delivery event for this transportation waste material."
         },
         {
+            "@id": "unece:priorityRankingNumeric",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "priorityRankingNumeric",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:Preference"
+            },
+            "rdfs:comment": "The priority ranking number for this experience item preference."
+        },
+        {
             "@id": "unece:procedure",
             "@type": [
                 "rdf:Property",
@@ -33741,6 +34739,26 @@
             "rdfs:comment": "A code specifying a property reference for this supply chain reference."
         },
         {
+            "@id": "unece:providedCertificate",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "providedCertificate",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecifiedCertificate"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceProduct"
+                },
+                {
+                    "@id": "unece:ExperienceEvent"
+                }
+            ],
+            "rdfs:comment": "A certificate provided for this experience product."
+        },
+        {
             "@id": "unece:providedName",
             "@type": [
                 "rdf:Property",
@@ -33754,6 +34772,26 @@
                 "@id": "unece:Stowaway"
             },
             "rdfs:comment": "A name, expressed as text, as provided by this found stowaway."
+        },
+        {
+            "@id": "unece:providedRequirement",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "providedRequirement",
+            "schema:rangeIncludes": {
+                "@id": "unece:Requirement"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceProduct"
+                },
+                {
+                    "@id": "unece:ExperienceEvent"
+                }
+            ],
+            "rdfs:comment": "A requirement provided for this experience product."
         },
         {
             "@id": "unece:providedService",
@@ -33879,6 +34917,21 @@
                 "@id": "unece:DangerousGoods"
             },
             "rdfs:comment": "The radioactive material (Class 7) transported as dangerous goods."
+        },
+        {
+            "@id": "unece:raisedQuery",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "raisedQuery",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecialQuery"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "A special query raised for this guest person."
         },
         {
             "@id": "unece:reExportCountry",
@@ -34039,6 +35092,21 @@
                 "@id": "unece:LogisticsStatus"
             },
             "rdfs:comment": "The reference date or date time for this referenced document."
+        },
+        {
+            "@id": "unece:registeredDateTime",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "registeredDateTime",
+            "schema:rangeIncludes": {
+                "@id": "xsd:datetime"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:Disability"
+            },
+            "rdfs:comment": "The date, time, date time, or other date time value when this guest disability has been registered."
         },
         {
             "@id": "unece:registrationCountry",
@@ -34629,6 +35697,21 @@
             "rdfs:comment": "A trade party requesting this referenced transport service."
         },
         {
+            "@id": "unece:requiredReservationGuaranteeIndicator",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "requiredReservationGuaranteeIndicator",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceProduct"
+            },
+            "rdfs:comment": "The indication of whether or not this experience product requires a reservation guarantee."
+        },
+        {
             "@id": "unece:requiredService",
             "@type": [
                 "rdf:Property",
@@ -34644,6 +35727,41 @@
             "rdfs:comment": "A transport service required for this logistics means of transport."
         },
         {
+            "@id": "unece:requiredSupportingDevice",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "requiredSupportingDevice",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:Disability"
+            },
+            "rdfs:comment": "A supporting device, expressed as text, for this required guest disability."
+        },
+        {
+            "@id": "unece:requiredUsageCondition",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "requiredUsageCondition",
+            "schema:rangeIncludes": {
+                "@id": "unece:UsageCondition"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceProduct"
+                },
+                {
+                    "@id": "unece:ExperienceEvent"
+                }
+            ],
+            "rdfs:comment": "A required usage condition for this experience product."
+        },
+        {
             "@id": "unece:requirementIndicator",
             "@type": [
                 "rdf:Property",
@@ -34657,6 +35775,74 @@
                 "@id": "unece:PackagingInstructions"
             },
             "rdfs:comment": "The indication of whether or not a requirement exists for these document handling instructions."
+        },
+        {
+            "@id": "unece:reservationGuarantee",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "reservationGuarantee",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceItem"
+                },
+                {
+                    "@id": "unece:ExperienceProduct"
+                },
+                {
+                    "@id": "unece:ExperienceEvent"
+                }
+            ],
+            "rdfs:comment": "A reservation guarantee, expressed as text, for this experience event."
+        },
+        {
+            "@id": "unece:reservationRequiredIndicator",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "reservationRequiredIndicator",
+            "schema:rangeIncludes": {
+                "@id": "xsd:boolean"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceEvent"
+            },
+            "rdfs:comment": "The indication of whether or not a reservation is required for this experience event."
+        },
+        {
+            "@id": "unece:residenceCountryId",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "residenceCountryId",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "The identifier for the country of residence for this TT party, such as the country in which a person lives or in which a corporation has its place of incorporation."
+        },
+        {
+            "@id": "unece:responseStatusCode",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "responseStatusCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "The code specifying the response status for this special query."
         },
         {
             "@id": "unece:responsibleParty",
@@ -34687,6 +35873,38 @@
                 "@id": "unece:Stowaway"
             },
             "rdfs:comment": "A statement, expressed as text, about the stowaway made by the person responsible for operating the means of transport on which the stowaway was found."
+        },
+        {
+            "@id": "unece:restriction",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "restriction",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:PetAnimal"
+                },
+                {
+                    "@id": "unece:Allergy"
+                },
+                {
+                    "@id": "unece:CarriedEquipment"
+                },
+                {
+                    "@id": "unece:Disability"
+                },
+                {
+                    "@id": "unece:FoodChoice"
+                },
+                {
+                    "@id": "unece:GuestHealthIndication"
+                }
+            ],
+            "rdfs:comment": "A restriction, expressed as text, for this disease protection means."
         },
         {
             "@id": "unece:returnableAssetInstructionsTermsAndConditionsDescriptionCode",
@@ -34758,6 +35976,21 @@
                 "@id": "unece:TransportPerson"
             },
             "rdfs:comment": "A role, expressed as text, for this contact person."
+        },
+        {
+            "@id": "unece:roleCode",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "roleCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "The code specifying the role for this cooperating organization."
         },
         {
             "@id": "unece:routeType",
@@ -35413,6 +36646,51 @@
             "rdfs:comment": "A certified accreditation specific to this transport person."
         },
         {
+            "@id": "unece:specificationNote",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "specificationNote",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecifiedNote"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:CarriedEquipment"
+            },
+            "rdfs:comment": "A specification note for this guest carried equipment."
+        },
+        {
+            "@id": "unece:specifiedCarriedEquipment",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "specifiedCarriedEquipment",
+            "schema:rangeIncludes": {
+                "@id": "unece:CarriedEquipment"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "Carried equipment specified for this guest person."
+        },
+        {
+            "@id": "unece:specifiedCommunication",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "specifiedCommunication",
+            "schema:rangeIncludes": {
+                "@id": "unece:Communication"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceFacility"
+            },
+            "rdfs:comment": "A communication specified for this payment financial institution."
+        },
+        {
             "@id": "unece:specifiedDeliveryTerms",
             "@type": [
                 "rdf:Property",
@@ -35717,6 +36995,32 @@
             "rdfs:comment": "A reference specified for this supply chain consignment."
         },
         {
+            "@id": "unece:specifiedTradeParty",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "specifiedTradeParty",
+            "schema:rangeIncludes": {
+                "@id": "unece:Party"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceProgramAction"
+                },
+                {
+                    "@id": "unece:ExperienceItem"
+                },
+                {
+                    "@id": "unece:ExperienceProduct"
+                },
+                {
+                    "@id": "unece:ExperienceEvent"
+                }
+            ],
+            "rdfs:comment": "A party specified for this experience event."
+        },
+        {
             "@id": "unece:specifiedTransportEvent",
             "@type": [
                 "rdf:Property",
@@ -35870,6 +37174,26 @@
                 "@id": "unece:SupplyChainReference"
             },
             "rdfs:comment": "A status, expressed as text, for this acknowledgement document."
+        },
+        {
+            "@id": "unece:statusCode",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "statusCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceProgramAction"
+                },
+                {
+                    "@id": "unece:ExperienceItem"
+                }
+            ],
+            "rdfs:comment": "A code specifying a status for this trade product."
         },
         {
             "@id": "unece:statusIndicator",
@@ -36252,6 +37576,46 @@
             "rdfs:comment": "A textual description of the terms and conditions for these returnable asset instructions."
         },
         {
+            "@id": "unece:theme",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "theme",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceItem"
+                },
+                {
+                    "@id": "unece:ExperienceProduct"
+                }
+            ],
+            "rdfs:comment": "A theme, expressed as text, for this experience product."
+        },
+        {
+            "@id": "unece:themeTypeCode",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "themeTypeCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": [
+                {
+                    "@id": "unece:ExperienceItem"
+                },
+                {
+                    "@id": "unece:ExperienceProduct"
+                }
+            ],
+            "rdfs:comment": "The code specifying the type of theme for this experience product."
+        },
+        {
             "@id": "unece:timeOccurrenceDateTime",
             "@type": [
                 "rdf:Property",
@@ -36265,6 +37629,36 @@
                 "@id": "unece:SupplyChainEvent"
             },
             "rdfs:comment": "A time value of an occurrence of this supply chain event."
+        },
+        {
+            "@id": "unece:title",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "title",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "A title, expressed as text, for this specified binary file."
+        },
+        {
+            "@id": "unece:titleCode",
+            "@type": [
+                "rdf:Property",
+                "owl:DatatypeProperty"
+            ],
+            "rdfs:label": "titleCode",
+            "schema:rangeIncludes": {
+                "@id": "xsd:string"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "The code specifying the title of this guest person."
         },
         {
             "@id": "unece:totalAllowanceChargeAmount",
@@ -37210,6 +38604,21 @@
             "rdfs:comment": "A referenced travel identity document for this transport person."
         },
         {
+            "@id": "unece:travelInsuranceCertificate",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "travelInsuranceCertificate",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecifiedCertificate"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "A travel insurance certificate for this guest person."
+        },
+        {
             "@id": "unece:travelVisaDocument",
             "@type": [
                 "rdf:Property",
@@ -37529,6 +38938,36 @@
             "rdfs:comment": "The unique upper part of the orange hazard placard identifier for these transported dangerous goods."
         },
         {
+            "@id": "unece:upperPriceLimitAmount",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "upperPriceLimitAmount",
+            "schema:rangeIncludes": {
+                "@id": "unece:AmountType"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "A monetary value of an upper price limit of this specified experience item."
+        },
+        {
+            "@id": "unece:usedCommunication",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "usedCommunication",
+            "schema:rangeIncludes": {
+                "@id": "unece:Communication"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:GuestPerson"
+            },
+            "rdfs:comment": "A communication used by this trade contact."
+        },
+        {
             "@id": "unece:usedPackaging",
             "@type": [
                 "rdf:Property",
@@ -37542,6 +38981,21 @@
                 "@id": "unece:Package"
             },
             "rdfs:comment": "Supply chain packaging used for this logistics package."
+        },
+        {
+            "@id": "unece:usedSource",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "usedSource",
+            "schema:rangeIncludes": {
+                "@id": "unece:Source"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceFacility"
+            },
+            "rdfs:comment": "A water source used by this experience facility."
         },
         {
             "@id": "unece:usedTransportMeans",
@@ -37702,6 +39156,21 @@
                 "@id": "unece:DangerousGoods"
             },
             "rdfs:comment": "A viscosity measure for these transported dangerous goods."
+        },
+        {
+            "@id": "unece:visitingPeriod",
+            "@type": [
+                "rdf:Property",
+                "owl:ObjectProperty"
+            ],
+            "rdfs:label": "visitingPeriod",
+            "schema:rangeIncludes": {
+                "@id": "unece:SpecifiedPeriod"
+            },
+            "schema:domainIncludes": {
+                "@id": "unece:ExperienceItem"
+            },
+            "rdfs:comment": "A visiting period for this specified experience item."
         },
         {
             "@id": "unece:volumeMeasure",
