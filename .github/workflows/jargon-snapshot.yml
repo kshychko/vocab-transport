@@ -6,7 +6,7 @@ on:
 
 jobs:
 
-  jargon_release:
+  jargon_snapshot:
     uses: uncefact/.github/.github/workflows/jargon-snapshot.yml@main
     with:
       vocabulary_name: transport
