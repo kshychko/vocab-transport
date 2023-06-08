@@ -5,34 +5,9 @@ on:
     types: [ 'jargon_onSnapshot' ]
 
 jobs:
-  snapshot:
-    runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-java@v2
-        with:
-          distribution: 'adopt'
-          java-version: '11'
-      - run: 'echo "field: ${{ github.event.client_payload.artefacts.jsonldVocab.url }}"'
-      - run: 'echo "field: ${{ github.event.client_payload.artefacts.jsonldVocab.fileName }}"'
-      - run: 'wget -O transport.jsonld ${{ github.event.client_payload.artefacts.jsonldVocab.url }}'
-      - run: 'mv transport.jsonld vocab/'
-      - run: java -jar vocab-jsonld-merge-1.0.0.jar
-      - run: 'mv merged.jsonld vocab/'
-
-
-      - name: snapshot PR
-        uses: peter-evans/create-pull-request@v5
-        with:
-          commit-message: "chore: snapshot"
-          delete-branch: true
-          title: 'chore: update vocabulary from jargon snapshot'
-          body: |
-            Updates JSON-LD vocabulary published as an artefact as a part of jargon snapshot event
-          base: 'main'
-          branch: create-pull-request/snapshot
-          draft: true
-
-
-
+  jargon_release:
+    uses: uncefact/.github/.github/workflows/jargon-snapshot.yml@main
+    with:
+      vocabulary_name: transport
+    secrets: inherit
