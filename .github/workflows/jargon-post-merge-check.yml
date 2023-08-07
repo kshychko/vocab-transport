@@ -1,0 +1,12 @@
+name: Post-merge check
+
+on:
+  # Runs on pull requests against main branch
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  post-check:
+    uses: uncefact/.github/.github/workflows/jargon-post-merge-check.yml@main
+    secrets: inherit
