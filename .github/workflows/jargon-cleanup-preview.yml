@@ -1,0 +1,15 @@
+name: Cleanup site preview on AWS S3
+
+on:
+  # Runs on pull requests against main branch
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+
+  jargon_release:
+    uses: uncefact/.github/.github/workflows/cleanup.yml@main
+    secrets: inherit
