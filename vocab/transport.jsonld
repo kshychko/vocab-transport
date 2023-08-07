@@ -24829,7 +24829,7 @@
             "schema:source": {
                 "@id": "https://vocabulary.uncefact.org/LogisticsTransportEquipment"
             },
-            "rdfs:comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes.TBR: description update to excersize GitHub update"
+            "rdfs:comment": "A piece of equipment used to hold, protect or secure cargo for logistics purposes.,A referenced piece of equipment used to hold, protect or secure cargo for logistics purposes."
         },
         {
             "@id": "unece:TransportEvent",
@@ -26624,7 +26624,7 @@
             "@id": "unece:transportEquipmentCategoryCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportEquipmentCategoryCode",
             "schema:rangeIncludes": {
@@ -26639,7 +26639,7 @@
             "@id": "unece:transportEquipmentFullnessUsedCapacityCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportEquipmentFullnessUsedCapacityCode",
             "schema:rangeIncludes": {
@@ -26654,7 +26654,7 @@
             "@id": "unece:transportEquipmentHaulageArrangementsCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportEquipmentHaulageArrangementsCode",
             "schema:rangeIncludes": {
@@ -26669,7 +26669,7 @@
             "@id": "unece:transportEquipmentLegalStatusLegalStatusCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportEquipmentLegalStatusLegalStatusCode",
             "schema:rangeIncludes": {
@@ -26684,7 +26684,7 @@
             "@id": "unece:transportEquipmentMovementStatusTransportMovementStatusCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportEquipmentMovementStatusTransportMovementStatusCode",
             "schema:rangeIncludes": {
@@ -26699,7 +26699,7 @@
             "@id": "unece:transportEquipmentOperationalStatusCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportEquipmentOperationalStatusCode",
             "schema:rangeIncludes": {
@@ -26714,7 +26714,7 @@
             "@id": "unece:transportEquipmentSizeTypeCharacteristicCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportEquipmentSizeTypeCharacteristicCode",
             "schema:rangeIncludes": {
@@ -26729,7 +26729,7 @@
             "@id": "unece:transportEquipmentSupplierPartyRoleCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportEquipmentSupplierPartyRoleCode",
             "schema:rangeIncludes": {
@@ -27472,7 +27472,7 @@
             "@id": "unece:reportedConditionTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "reportedConditionTypeCode",
             "schema:rangeIncludes": {
@@ -28006,7 +28006,7 @@
             "@id": "unece:transportContractMovementContractMovementTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportContractMovementContractMovementTypeCode",
             "schema:rangeIncludes": {
@@ -28036,7 +28036,7 @@
             "@id": "unece:transportServiceConditionTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportServiceConditionTypeCode",
             "schema:rangeIncludes": {
@@ -28051,7 +28051,7 @@
             "@id": "unece:transportServicePaymentArrangementCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportServicePaymentArrangementCode",
             "schema:rangeIncludes": {
@@ -28074,7 +28074,7 @@
             "@id": "unece:transportServicePriorityCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportServicePriorityCode",
             "schema:rangeIncludes": {
@@ -28089,7 +28089,7 @@
             "@id": "unece:transportServiceRequirementCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportServiceRequirementCode",
             "schema:rangeIncludes": {
@@ -28234,7 +28234,7 @@
             "@id": "unece:dangerousGoodsPackagingLevelPackagingDangerLevelCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "dangerousGoodsPackagingLevelPackagingDangerLevelCode",
             "schema:rangeIncludes": {
@@ -28249,7 +28249,7 @@
             "@id": "unece:dangerousGoodsRegulationCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "dangerousGoodsRegulationCode",
             "schema:rangeIncludes": {
@@ -28844,7 +28844,7 @@
             "@id": "unece:transportDangerousGoodsPackageTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportDangerousGoodsPackageTypeCode",
             "schema:rangeIncludes": {
@@ -29130,7 +29130,7 @@
             "@id": "unece:packageTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "packageTypeCode",
             "schema:rangeIncludes": {
@@ -29150,7 +29150,7 @@
             "@id": "unece:packagingLevelCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "packagingLevelCode",
             "schema:rangeIncludes": {
@@ -29867,7 +29867,7 @@
             "@id": "unece:logisticsTransportMovementStatusCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "logisticsTransportMovementStatusCode",
             "schema:rangeIncludes": {
@@ -30515,7 +30515,7 @@
             "@id": "unece:transportMeansDirectionTransitDirectionCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportMeansDirectionTransitDirectionCode",
             "schema:rangeIncludes": {
@@ -30560,7 +30560,7 @@
             "@id": "unece:transportMovementStageCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportMovementStageCode",
             "schema:rangeIncludes": {
@@ -31175,7 +31175,7 @@
             "@id": "unece:transportMeansTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportMeansTypeCode",
             "schema:rangeIncludes": {
@@ -31375,7 +31375,7 @@
             "@id": "unece:chargePayingPartyRoleCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "chargePayingPartyRoleCode",
             "schema:rangeIncludes": {
@@ -31405,7 +31405,7 @@
             "@id": "unece:freightChargeTariffClassCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "freightChargeTariffClassCode",
             "schema:rangeIncludes": {
@@ -31420,7 +31420,7 @@
             "@id": "unece:freightChargeTypeId",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "freightChargeTypeId",
             "schema:rangeIncludes": {
@@ -31450,7 +31450,7 @@
             "@id": "unece:logisticsChargeCalculationBasisCalculationBasisCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "logisticsChargeCalculationBasisCalculationBasisCode",
             "schema:rangeIncludes": {
@@ -31525,7 +31525,7 @@
             "@id": "unece:transportServiceCategoryCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportServiceCategoryCode",
             "schema:rangeIncludes": {
@@ -32103,7 +32103,7 @@
             "@id": "unece:currencyServiceChargeCurrencyCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "currencyServiceChargeCurrencyCode",
             "schema:rangeIncludes": {
@@ -33841,7 +33841,7 @@
             "@id": "unece:goodsTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "goodsTypeCode",
             "schema:rangeIncludes": {
@@ -33856,7 +33856,7 @@
             "@id": "unece:goodsTypeExtensionTypeExtensionCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "goodsTypeExtensionTypeExtensionCode",
             "schema:rangeIncludes": {
@@ -34842,7 +34842,7 @@
             "@id": "unece:logisticsStatusConditionCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "logisticsStatusConditionCode",
             "schema:rangeIncludes": {
@@ -34857,7 +34857,7 @@
             "@id": "unece:logisticsStatusReasonCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "logisticsStatusReasonCode",
             "schema:rangeIncludes": {
@@ -35047,7 +35047,7 @@
             "@id": "unece:locationFunctionTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "locationFunctionTypeCode",
             "schema:rangeIncludes": {
@@ -35067,7 +35067,7 @@
             "@id": "unece:logisticsLocationCountryId",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "logisticsLocationCountryId",
             "schema:rangeIncludes": {
@@ -35722,7 +35722,7 @@
             "@id": "unece:partyRoleCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "partyRoleCode",
             "schema:rangeIncludes": {
@@ -35782,7 +35782,7 @@
             "@id": "unece:transportPersonLanguageId",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportPersonLanguageId",
             "schema:rangeIncludes": {
@@ -35842,7 +35842,7 @@
             "@id": "unece:automaticDataCaptureMethodTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "automaticDataCaptureMethodTypeCode",
             "schema:rangeIncludes": {
@@ -35932,7 +35932,7 @@
             "@id": "unece:packagingMarkingTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "packagingMarkingTypeCode",
             "schema:rangeIncludes": {
@@ -35962,7 +35962,7 @@
             "@id": "unece:logisticsShippingMarksMarkingInstructionCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "logisticsShippingMarksMarkingInstructionCode",
             "schema:rangeIncludes": {
@@ -36052,7 +36052,7 @@
             "@id": "unece:countryClaimedNationalityId",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "countryClaimedNationalityId",
             "schema:rangeIncludes": {
@@ -36262,7 +36262,7 @@
             "@id": "unece:cargoCategoryTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "cargoCategoryTypeCode",
             "schema:rangeIncludes": {
@@ -36277,7 +36277,7 @@
             "@id": "unece:cargoCommodityCategoryStatisticalClassificationCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "cargoCommodityCategoryStatisticalClassificationCode",
             "schema:rangeIncludes": {
@@ -36292,7 +36292,7 @@
             "@id": "unece:cargoOperationalCategoryCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "cargoOperationalCategoryCode",
             "schema:rangeIncludes": {
@@ -36682,7 +36682,7 @@
             "@id": "unece:transportRouteStatusCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "transportRouteStatusCode",
             "schema:rangeIncludes": {
@@ -37092,7 +37092,7 @@
             "@id": "unece:temperatureTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "temperatureTypeCode",
             "schema:rangeIncludes": {
@@ -37562,7 +37562,7 @@
             "@id": "unece:adjustmentReasonCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "adjustmentReasonCode",
             "schema:rangeIncludes": {
@@ -37952,7 +37952,7 @@
             "@id": "unece:deliveryTermsDeliveryTypeCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "deliveryTermsDeliveryTypeCode",
             "schema:rangeIncludes": {
@@ -37967,7 +37967,7 @@
             "@id": "unece:deliveryTermsFunctionCode",
             "@type": [
                 "rdf:Property",
-                "owl:DatatypeProperty"
+                "owl:ObjectProperty"
             ],
             "rdfs:label": "deliveryTermsFunctionCode",
             "schema:rangeIncludes": {
